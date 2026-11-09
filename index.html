@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZABONI | زبوني - خدمة التوصيل الذكي في حمص (24/7)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        zaboni: {
+                            green: '#059669',
+                            greenLight: '#10B981',
+                            greenSoft: '#ECFDF5',
+                            blue: '#0284C7',
+                            blueDark: '#1D4ED8',
+                            blueSoft: '#F0F9FF',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #F8FAFC; }
+        .gradient-brand { background: linear-gradient(135deg, #059669 0%, #0284C7 100%); }
+        .gradient-brand-soft { background: linear-gradient(135deg, #ECFDF5 0%, #F0F9FF 100%); }
+        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 15px 25px -5px rgba(2, 132, 199, 0.1); }
+    </style>
+</head>
+<body class="text-slate-800 antialiased selection:bg-zaboni-green selection:text-white">
+
+    <!-- Main Navbar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-3">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-2xl gradient-brand flex items-center justify-center text-white shadow-md">
+                    <i class="fa-solid fa-motorcycle text-2xl"></i>
+                </div>
+                <div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-2xl font-black tracking-tight text-zaboni-green">ZABONI</span>
+                        <span class="text-slate-300 font-light">|</span>
+                        <span class="text-2xl font-black text-zaboni-blue">زبوني</span>
+                    </div>
+                    <p class="text-[11px] font-bold text-slate-500 -mt-1">كل ما يحتاجه بيتك... يصلك لبابك</p>
+                </div>
+            </a>
+
+            <div class="flex items-center gap-2">
+                <button onclick="openOrderModal('ZABONI EXPRESS')" class="gradient-brand hover:opacity-95 text-white font-extrabold px-4 sm:px-5 py-2.5 rounded-xl text-sm shadow-lg flex items-center gap-2 transition">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>اطلب الآن</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden gradient-brand-soft pt-8 pb-14 lg:py-20 border-b border-emerald-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-7 space-y-6 text-right">
+                    <div class="inline-flex flex-wrap items-center gap-2 bg-white px-4 py-1.5 rounded-full shadow-sm border border-emerald-200">
+                        <span class="w-2.5 h-2.5 rounded-full bg-zaboni-green animate-ping"></span>
+                        <span class="text-xs sm:text-sm font-extrabold text-zaboni-green">حمص – خدمة توصيل وسرعة استجابة 24/7</span>
+                        <span class="text-xs bg-zaboni-blue/10 text-zaboni-blue px-2 py-0.5 rounded-md font-bold">نقداً أو شام كاش</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-tight">
+                        كل ما يحتاجه بيتك...
+                        <span class="block mt-2 text-transparent bg-clip-text gradient-brand">يصلك لبابك مع زبوني!</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 font-medium leading-relaxed max-w-2xl">
+                        <strong>ZABONI – زبوني</strong> منظومة خدمات يومية شاملة في حمص. نلبي طلباتكم فوراً مع تقييم سريع للطلب، وتحديد التكلفة وتأكيدها عند وصول رسالتكم لنا عبر فريقنا المتواجد في الميدان.
+                    </p><br>
+
+                    <!-- Clean Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="https://wa.me/963980193770?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%B2%D8%A8%D9%88%D9%86%D9%8A%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D8%B7%D9%84%D8%A8" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3.5 rounded-2xl text-sm shadow-md flex items-center justify-center gap-3 transition">
+                            <i class="fa-brands fa-whatsapp text-xl text-emerald-200"></i>
+                            <span>طلب عبر واتساب: <strong dir="ltr">0980 193 770</strong></span>
+                        </a>
+                        <a href="tel:0985667191" class="bg-white hover:bg-sky-50 text-zaboni-blue border-2 border-sky-300 font-bold px-6 py-3.5 rounded-2xl text-sm shadow-sm flex items-center justify-center gap-3 transition">
+                            <i class="fa-solid fa-phone-volume text-sky-500"></i>
+                            <span>اتصال مباشر: <strong dir="ltr">0985 667 191</strong></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="bg-white rounded-3xl p-6 sm:p-7 shadow-xl border border-emerald-100 relative space-y-4">
+                        <div class="text-center pb-2 border-b border-slate-100">
+                            <h3 class="font-black text-slate-900 text-base">أسطول التوصيل والخدمة الفورية</h3>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-white border-2 border-emerald-500 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-motorcycle text-xl text-zaboni-green"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-slate-900 text-sm">توصيل دراجة</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">سرعة فائقة للطلبات الصغيرة والوجبات في كافة أحياء حمص.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-white border-2 border-sky-500 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-truck-fast text-xl text-zaboni-blue"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-slate-900 text-sm">توصيل سيارة</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">جاهزون في الميدان للمشتريات الكبيرة، الغاز وعقود الشركات.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8 Core Services Section -->
+    <section id="services" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+            <span class="text-xs font-extrabold uppercase tracking-wider text-zaboni-green bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">خدمات ZABONI</span>
+            <h2 class="text-3xl font-black text-slate-900">8 أقسام رئيسية لتلبية احتياجاتك</h2>
+        </div>
+        <div id="servicesGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800 text-center text-xs">
+        <p>© 2026 جميع الحقوق محفوظة لشركة <strong>ZABONI – زبوني</strong> (حمص، سوريا).</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="orderModal" class="fixed inset-0 z-50 hidden bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl relative">
+            <button onclick="closeOrderModal()" class="absolute top-5 left-5 w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center font-bold">✕</button>
+            <h3 id="modalTitle" class="text-xl font-black text-slate-900 mb-4">طلب جديد</h3>
+            <form onsubmit="submitServiceOrder(event)" class="space-y-4">
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <input id="orderClientName" type="text" required placeholder="اسم العميل" class="w-full p-3 rounded-xl border text-sm">
+                    <input id="orderClientPhone" type="tel" required placeholder="رقم الهاتف" class="w-full p-3 rounded-xl border text-sm">
+                </div>
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <select id="orderNeighborhood" class="w-full p-3 rounded-xl border bg-white text-sm font-bold">
+                        <option value="حي المحطة" selected>حي المحطة</option>
+                        <option value="ساحة حجي عاطف">ساحة حجي عاطف</option>
+                        <option value="حي الغوطة">حي الغوطة</option>
+                        <option value="حي الحمراء">حي الحمراء</option>
+                        <option value="حي الإنشاءات">حي الإنشاءات</option>
+                        <option value="سوق الدبلان">سوق الدبلان</option>
+                        <option value="السوق المسقوف">السوق المسقوف</option>
+                        <option value="حي الخالدية">حي الخالدية</option>
+                        <option value="شارع الحضارة">شارع الحضارة</option>
+                        <option value="كرم الشامي">كرم الشامي</option>
+                        <option value="حي الوعر">حي الوعر</option>
+                        <option value="باب السباع">باب السباع</option>
+                        <option value="طريق الشام">طريق الشام</option>
+                        <option value="عكرمة">عكرمة</option>
+                        <option value="الزهراء">الزهراء</option>
+                        <option value="الحميدية">الحميدية</option>
+                        <option value="مركز المدينة">مركز المدينة</option>
+                        <option value="منطقة أخرى (اكتبها بالتفصيل بالعنوان)">منطقة أخرى (اكتبها بالتفصيل بالعنوان)</option>
+                    </select>
+                    <select id="orderPaymentMethod" class="w-full p-3 rounded-xl border bg-white text-sm font-bold">
+                        <option value="نقداً عند الاستلام">💵 نقداً عند الاستلام</option>
+                        <option value="شام كاش (Sham Cash)">📲 شام كاش (Sham Cash)</option>
+                    </select>
+                </div>
+                <input id="orderAddressDetail" type="text" required placeholder="العنوان بالتفصيل (الشارع، البناء، رقم الطابق...)" class="w-full p-3 rounded-xl border text-sm">
+                <textarea id="orderItemsInput" rows="3" required placeholder="تفاصيل الطلب أو المواد المطلوبة..." class="w-full p-3 rounded-xl border text-sm"></textarea>
+                <button type="submit" class="w-full gradient-brand text-white font-black py-3.5 rounded-xl shadow text-sm">إرسال الطلب لواتساب زبوني (0980193770)</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const ZABONI_WHATSAPP = '963980193770';
+        const zaboniServices = [
+            { code: 'ZABONI MARKET', title: 'زبوني ماركت', icon: 'fa-basket-shopping', badge: 'احتياجات البيت', desc: 'خضار، فواكه، لحوم، مواد غذائية ومنظفات.' },
+            { code: 'ZABONI FOOD', title: 'زبوني مطاعم', icon: 'fa-utensils', badge: 'حافظات حرارية', desc: 'توصيل سريع من المطاعم والوجبات السريعة.' },
+            { code: 'ZABONI PHARMA', title: 'زبوني دواء', icon: 'fa-kit-medical', badge: 'صيدليات مرخصة', desc: 'توصيل الأدوية والمستلزمات الطبية ليلاً.' },
+            { code: 'ZABONI GAS', title: 'زبوني غاز', icon: 'fa-fire-flame-simple', badge: 'موزعون معتمدون', desc: 'تنسيق أسطوانات الغاز المنزلي بأمان.' },
+            { code: 'ZABONI LAUNDRY', title: 'زبوني مغاسل', icon: 'fa-shirt', badge: 'توثيق بالقطعة', desc: 'استلام وتسليم الملابس من وإلى المغسلة.' },
+            { code: 'ZABONI HOME SERVICE', title: 'خدمات منزلية', icon: 'fa-screwdriver-wrench', badge: 'فنيون مؤهلون', desc: 'كهرباء، سباكة، ونجارة منزلية خفيفة.' },
+            { code: 'ZABONI EXPRESS', title: 'زبوني إكسبريس', icon: 'fa-bolt', badge: 'مشاوير خاصة', desc: 'نقل طرود ومستندات وأغراض شخصية.' },
+            { code: 'ZABONI BUSINESS', title: 'زبوني أعمال', icon: 'fa-briefcase', badge: 'عقود شركات', desc: 'حلول لوجستية وعقود شهرية للمتاجر.' }
+        ];
+
+        let activeServiceCode = 'ZABONI MARKET';
+
+        function renderServices() {
+            const grid = document.getElementById('servicesGrid');
+            grid.innerHTML = '';
+            zaboniServices.forEach(s => {
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-3xl p-6 border border-slate-200 card-hover flex flex-col justify-between';
+                card.innerHTML = `
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-zaboni-green flex items-center justify-center text-2xl"><i class="fa-solid ${s.icon}"></i></div>
+                            <span class="text-[11px] font-black px-3 py-1 rounded-full bg-emerald-50 text-zaboni-green">${s.badge}</span>
+                        </div>
+                        <h3 class="text-xl font-black text-slate-900 mb-2">${s.title}</h3>
+                        <p class="text-xs text-slate-600 mb-4">${s.desc}</p>
+                    </div>
+                    <button onclick="openOrderModal('${s.code}')" class="w-full py-3 rounded-xl font-extrabold text-xs bg-emerald-50 text-zaboni-green hover:bg-zaboni-green hover:text-white transition">اطلب الآن</button>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function openOrderModal(code) {
+            activeServiceCode = code;
+            const s = zaboniServices.find(x => x.code === code);
+            document.getElementById('modalTitle').textContent = `طلب خدمة: ${s.title}`;
+            document.getElementById('orderModal').classList.remove('hidden');
+        }
+
+        function closeOrderModal() {
+            document.getElementById('orderModal').classList.add('hidden');
+        }
+
+        function submitServiceOrder(e) {
+            e.preventDefault();
+            const s = zaboniServices.find(x => x.code === activeServiceCode);
+            const msg = `🟢 *طلب جديد عبر ZABONI - حمص*\n` +
+                        `• *القسم:* ${s.title}\n` +
+                        `• *العميل:* ${document.getElementById('orderClientName').value}\n` +
+                        `• *الهاتف:* ${document.getElementById('orderClientPhone').value}\n` +
+                        `• *المنطقة:* ${document.getElementById('orderNeighborhood').value}\n` +
+                        `• *العنوان:* ${document.getElementById('orderAddressDetail').value}\n` +
+                        `• *الدفع:* ${document.getElementById('orderPaymentMethod').value}\n` +
+                        `• *التفاصيل:* ${document.getElementById('orderItemsInput').value}\n\n` +
+                        `⚡ ملاحظة: سيتم الرد، تقييم الطلب، وتحديد تكلفة التوصيل فور وصول رسالتكم لفريق العمل في الميدان.`;
+            window.open(`https://wa.me/${ZABONI_WHATSAPP}?text=${encodeURIComponent(msg)}`, '_blank');
+            closeOrderModal();
+        }
+
+        window.onload = () => { renderServices(); };
+    </script>
+</body>
+</html>
